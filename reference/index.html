@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Registratsiya</title>
+</head>
+<body>
+
+<!-- blok yaratib olaman -->
+
+<div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Reference Form</h1>
+          <p id="description" class="description text-center">
+            Shaxsiy malumotlarni qoldiring   
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Ism</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Ismingizni kiritng"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Emailni kiriting"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Yosh<span class="clue">Ixtiyoriy</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Yosh"
+            />
+          </div>
+          <div class="form-group">
+            <p>Xozirgi kasbingiz qanday?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Kiriting</option>
+              <option value="student">Student</option>
+              <option value="job">To`liq stavkali ish</option>
+              <option value="learner">Abituriyent</option>
+              <option value="preferNo">Vaqtinchalik ishsiz</option>
+              <option value="other">Boshqa kasb</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Bizning o`quv markazni boshqalarga ham tavsiya qilasizmi?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Albatta</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Balki</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Yo`q</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              O`quv markazning qaysi jihatlari sizga yoqdi?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Tanlang</option>
+              <option value="challenges">Musobaqa</option>
+              <option value="projects">Loyihalar</option>
+              <option value="community">Dars sifati</option>
+              <option value="openSource">Narxi</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              O`quv markazda yana nimalarni ko`rishni xohlaysiz?
+              <span class="clue">(Hammasini tanlash ham mumkin)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Yangi Loyihalar</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Backend Loyihalar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Yangi televizor, kompyuter</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Musobaqalar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Bepul wifi, coworking</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />Zamonaviy honalar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Video darslar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />Mashxurlar bilan uchrashuv</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Skidkalar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forumlar</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />Qo`shimcha kurslar</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Taklif yoki shikoyatlar?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="bu yerga yozing..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Jo`nat
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    
+</body>
+</html>
